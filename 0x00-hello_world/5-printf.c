@@ -1,4 +1,4 @@
-#includ <studio.h>
+#include <studio.h>
 int main{void}
 {
   ptintf{"\"with proper grammar, but the outcome is a piece of art,"}
