@@ -1,4 +1,4 @@
-#include "main.h"
+#include "main.c"
 /**
  *print_alphanet - prints out the alphabet 
  *Return: 0 if succesgul
