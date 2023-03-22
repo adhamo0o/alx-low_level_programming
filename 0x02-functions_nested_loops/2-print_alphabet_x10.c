@@ -1,9 +1,9 @@
-#include "main.c"
+#include "main.h"
 /**
- *print_alphanet - prints out the alphabet 
+ *print_alphanet_x10 - prints out the alphabet ten times
  *Return: 0 if succesgul
  */
-void print_alpnabet(void)
+void print_alpnabet_x10(void)
 {
   char x;
   int y;
