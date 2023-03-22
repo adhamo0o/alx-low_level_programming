@@ -1,15 +1,16 @@
-#indlude <stdio.h>
+#include "main.h"
+
 /**
- * print_alphabet - prints the lowercase alphabet followed by a new line
- *
- * Return: void
+ * print_alphabet - prints alphabet in lowercase
+ * Return: 0
  */
 void print_alphabet(void)
 {
-    char c;
+	char alpha;
 
-    for (c = 'a'; c <= 'z'; c++)
-        _putchar(c);
-
-    _putchar('\n');
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	{
+		_putchar (alpha);
+	}
+	_putchar ('\n');
 }
