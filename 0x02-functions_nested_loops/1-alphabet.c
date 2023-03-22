@@ -1,10 +1,11 @@
-#include <stdio.h>
-void print_alphabet();
-void print_alphabet(void) {
-    char c;
+#include"main.h"
 
-    for (c = 'a'; c <= 'z'; c++) {
-        putchar(c);
-    }
-    putchar('\n');
+void print_alphabet(void)
+      char j;
+{
+for (j = 'a';j <= 'z'; j++)
+  {
+        putchar(j);
+}
+ putchar('\n');
 }
