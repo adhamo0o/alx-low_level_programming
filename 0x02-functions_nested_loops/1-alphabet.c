@@ -8,7 +8,7 @@
 int _putchar(char c);
 void print_alphabet(void);
 
-int main() {
+int main(void) {
   print_alphabet();
   return 0;
 }
