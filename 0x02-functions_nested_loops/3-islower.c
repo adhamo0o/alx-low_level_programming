@@ -14,5 +14,5 @@ else
 {
 return (0);
 }
-_putcar ('\n');
+_putchar ('\n');
 }
