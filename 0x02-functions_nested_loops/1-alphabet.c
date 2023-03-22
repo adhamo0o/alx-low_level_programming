@@ -1,17 +1,9 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * print_alphabet - prints alphabet in lowercase
  * Return: 0
  */
-
-int _putchar(char c);
-void print_alphabet(void);
-
-int main(void) {
-  print_alphabet();
-  return 0;
-}
 void print_alphabet(void)
 {
 	char alpha;
