@@ -1,9 +1,10 @@
 #include "main.h"
+
 /**
- *add - fancuation that add two integers and 
+ *add - Adds two integers and 
  *returns the result
  *@a: number one
- *@b: nember two
+ *@b: number two
  */
 int add(int a, int b)
 {
