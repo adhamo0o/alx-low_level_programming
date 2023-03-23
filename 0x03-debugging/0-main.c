@@ -1,34 +1,12 @@
-explain me this code
- #include <stdlib.h>
-#include <time.h>
-#include <stdio.h>
-
+include "main.h"
 /**
- * main - Entry of the program
- * Return: Always return (0)
- **/
-
+ *main - test function that prints if integer is posotive or negative
+ *Return: 0
+ */
 int main(void)
 {
-	int n;
-
-	srand(time(0));
-	n = rand() - RAND_MAX / 2;
-
-	if (n < 0)
-	{
-		printf("%i is negative\n", n);
-	}
-	else
-	{
-		if (n > 0)
-		{
-			printf("%i is positive\n", n);
-		}
-		else
-		{
-			printf("%i is zero\n", n);
-		}
-	}
-	return (0);
+int i;
+i = 0;
+posotive_or_negative(1);
+return (0);
 }
