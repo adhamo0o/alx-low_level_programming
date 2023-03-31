@@ -9,23 +9,34 @@
  */
 char *cap_string(char *s)
 {
-int i;
-int capitalize_next = 1;
-for (i = 0; str[i] != '\0'; i++)
-{
-if (capitalize_next && (str[i] >= 'a' && str[i] <= 'z'))
-{
-str[i] -= 32;
-capitalize_next = 0;
-}
-else if (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' ||
-str[i] == ',' || str[i] == ';' || str[i] == '.' ||
-str[i] == '!' || str[i] == '?' || str[i] == '"' ||
-str[i] == '(' || str[i] == ')' || str[i] == '{' ||
-str[i] == '}')
-{
-capitalize_next = 1;
-}
-}
-return (str);
+	int i = 0;
+
+	while (s[i])
+	{
+		while (!(s[i] >= 'a' && s[i] <= 'z'))
+		{
+			i++;
+		}
+
+		if (s[i - 1] == ' ' ||
+		s[i - 1] == '\t' ||
+		s[i - 1] == '\n' ||
+		s[i - 1] == ',' ||
+		s[i - 1] == ';' ||
+		s[i - 1] == '.' ||
+		s[i - 1] == '!' ||
+		s[i - 1] == '?' ||
+		s[i - 1] == '"' ||
+		s[i - 1] == '(' ||
+		s[i - 1] == ')' ||
+		s[i - 1] == '{' ||
+		s[i - 1] == '}' ||
+		i == 0)
+		{
+			s[i] -= 32;
+		}
+
+		i++;
+	}
+	return (s);
 }
