@@ -23,5 +23,17 @@ else if (s1[i] < s2[i])
 return -1;
 }
 }
+if (s1[i] == s2[i])
+{
+return 0;
+}
+else if (s1[i] < s2[i])
+{
+return -1;
+}
+else
+{
+return 1;
+}
 return (s1[i] - s2[i]);
 }
