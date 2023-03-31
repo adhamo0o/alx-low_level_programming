@@ -22,6 +22,6 @@ else if (s1[i] < s2[i])
 {
 return -1;
 }
-return (s1[i] - s2[i]);
 }
+return (s1[i] - s2[i]);
 }
