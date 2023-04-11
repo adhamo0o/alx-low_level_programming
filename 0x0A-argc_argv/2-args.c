@@ -5,10 +5,10 @@
  *@argv: array of argument
  *Return: 0
  */
-int main(int argc, char *argv[])
+xint main(int argc, char *argv[])
 {
 int i;
 for (i = 0; i < argc; i++)
-ptintf("%s\n", argv[i]);
+printf("%s\n", argv[i]);
 return (0);
 }
