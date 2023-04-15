@@ -9,8 +9,8 @@
  */
 int main(int argc, char *argv[])
 {
-int index, mul;
-mul = 1;
+int index, multiplication;
+multiplication = 1;
 if (argv < 3)
 {
 printf("Error\n");
@@ -18,8 +18,8 @@ return (1);
 }
 for (index = 1; index < argc; index++)
 {
-mul = mul * atoi(argv[index]);
+mul = multiplication *atoi(argv[index]);
 }
-printf("%d\n", mul);
+printf("%d\n", multiplication);
 return (0);
 }
