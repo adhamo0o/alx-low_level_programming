@@ -7,7 +7,7 @@
  * @age: pointer to struct age
  * @owner: pointer to struct owner
  * Return: void
- */
+*/
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
 if (d != NULL)
