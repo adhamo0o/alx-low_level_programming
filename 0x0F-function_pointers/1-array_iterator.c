@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stddef.h>
 /**
  *array_iterator - function that executes function given as a paramx
  *@array: pinter to array
