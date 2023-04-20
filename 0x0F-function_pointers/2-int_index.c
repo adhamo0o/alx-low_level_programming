@@ -4,7 +4,7 @@
  *@array: array of integrs
  *@size: size of the aaray
  *@cmp: pointer to function
- *Return: returns the index of the first element for which the cmp function does not return 0
+ *Return: index of the first element for which the cmp func does not return 0
  */
 int int_index(int *array, int size, int (*cmp)(int))
 {
