@@ -9,14 +9,20 @@
  */
 int (*get_op_func(char *s))(int, int)
 {
-int (*ops[5])(int, int)={op_add, op_sub, op_mul, op_div, op_mod)
-char *ops_symplos = "+-*/%";
-while (ops_sumplos[i])
+op_t ops[] = {
+        {"+", op_add},
+        {"-", op_sub},
+        {"*", op_mul},
+        {"/", op_div},
+        {"%", op_mod},
+        {NULL, NULL}
+    };
+    int i;
+
+while (ops[i].op != NULL)
 {
-if (ops_symplos[i] == *s)
-{
-return (ops[i]);
-}
+if (strcmp(s, ops[i].op) == 0)
+return (ops[i].f);
 i++;
 }
 return (NULL);
