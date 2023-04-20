@@ -17,7 +17,7 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
- int i;
+int i;
 
 while (ops[i].op != NULL)
 {
