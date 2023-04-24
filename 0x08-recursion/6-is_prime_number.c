@@ -1,27 +1,46 @@
 include "main.h"
 
-int _prime(int n, int i);
 /**
- * is_prime_number - Entey Function
- * @n: integer
- * Return: 1 if n is a prime number, 0 if not
- */
+  *helperFunction - returns 0 or 1.
+  *@num: number being checked.
+  *@i: possible factor of the number.
+  *
+  *Return: 0 if not prime, 1 if prime.
+  */
+int helperFunction(int num, int i)
+{
+	if (i < num)
+	{
+		if (num % i == 0)
+		{
+			return (0);
+		}
+		else
+		{
+			return (helperFunction(num, i + 1));
+		}
+	}
+	else
+	{
+		return (1);
+	}
+}
+
+/**
+  *is_prime_number - checks if number is prime or not.
+  *@n: number to be checked.
+  *
+  *Return: 1 if number is prime.
+  *0 if number is not prime.
+  */
 int is_prime_number(int n)
 {
-return (_prime(n, 2));
-}
-/**
- * _prime  - Entry Function
- * @n: integer
- * @i: integer
- * Return: 1 if n is a prime number, 0 if not
- */
-int _prime(int n, int i)
+if (n <= 1)
 {
-if (i >= n && n >= 2)
-return (1);
-else if (n % i == 0 || n < 2)
 return (0);
+}
 else
-return (_prime(n, i + 1));
+{
+return (helperFunction(n, 2));
+}
 }
