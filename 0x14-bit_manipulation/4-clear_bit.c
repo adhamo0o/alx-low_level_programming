@@ -11,6 +11,7 @@ unsigned int x;
 if (index > 63)
 return (-1);
 x = 1 << index;
+if (*n & n)
 *n = (*n ^ x);
 return (1);
 
