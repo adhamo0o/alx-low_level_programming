@@ -11,13 +11,13 @@ if (b == NULL)
 {
 return (0);
 }
-for ( ,*b != '\0', b++)
+for (, *b != '\0', b++)
 {
-if (*b = '0')
+if (*b == '0')
 {
 result << 1;
 }
-else if (*b = '1')
+else if (*b == '1')
 {
 result = (result << 1) | 1;
 }
