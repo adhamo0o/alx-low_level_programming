@@ -16,7 +16,7 @@ return (0);
 fd = open(filename, 0_RDONLY);
 if (fd < 0)
 return (0);
-buffer = malloc(sizeof(char) * letters);
+buffer = malloc(sizeof(char) * letters));
 if (buffer == NULL)
 {
 close(fd);
