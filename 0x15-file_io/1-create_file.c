@@ -16,7 +16,7 @@ return (-1);
 fd = open(O_CREAT | O_WRONLY | O_TRUNC, 0600);
 if (fd < 0)
 return (-1);
-if(!text_content)
+if(text_content != NULL)
 {
 x = write(fd, text_content, strlen(text_content));
 if ( x != strlen(text_content))
