@@ -4,7 +4,7 @@
 #include <fcntl.h>
 #define BUFFSIZE 1024
 
-void close(int fd);
+void safe_close(int fd);
 
 /**
 * main - functioon copy the content from file to another file
@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	int fd_from, fd_to, x, y;
 	char buff[BUFFSIZE];
 
-	if (ac != 3)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
@@ -45,17 +45,17 @@ int main(int argc, char *argv[])
 		}
 	} while (x);
 
-	close(fd_from);
-	close(fd_to);
+	safe_close(fd_from);
+	safe_close(fd_to);
 
 	return (0);
 }
 
 /**
-* close - function close the fd
+* safe_close - function close the fd
 * @fd: file decriptor
 */
-void close(int fd)
+void safe_close(int fd)
 {
 	if (close(fd) != 0)
 	{
