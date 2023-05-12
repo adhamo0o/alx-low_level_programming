@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <fcntl.h>
-
-#define BUFF 1024
+#define BUFFSIZE 1024
 
 void close(int fd);
 
@@ -17,7 +16,7 @@ void close(int fd);
 int main(int argc, char *argv[])
 {
 	int fd_from, fd_to, x, y;
-	char buff[BUFF];
+	char buff[BUFFSIZE];
 
 	if (ac != 3)
 	{
@@ -29,7 +28,7 @@ int main(int argc, char *argv[])
 	fd_to = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	do {
-		x = read(fd_from, buff, BUFF);
+		x = read(fd_from, buff, BUFFSIZE);
 
 		if (fd_from < 0 || x < 0)
 		{
