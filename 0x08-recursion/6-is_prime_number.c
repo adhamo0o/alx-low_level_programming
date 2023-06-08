@@ -12,6 +12,5 @@ if (is_prime_number(n % 2 == 0 || n % 3 == 0))
 return (0);
 else
 return (1);
-n++;
-}
+is_prime_number(n + 1);
 }
