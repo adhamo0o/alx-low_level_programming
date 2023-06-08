@@ -7,13 +7,13 @@
 */
 int _sqr(int n, int sqr)
 {
-	if (sqr > n)
-		return (-1);
+if (sqr > n)
+return (-1);
 
-	if (sqr * sqr == n)
-		return (sqr);
+if (sqr * sqr == n)
+return (sqr);
 
-	return (_sqrt(n, sqr + 1));
+return (_sqrt(n, sqr + 1));
 }
 
 /**
