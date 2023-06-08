@@ -1,5 +1,5 @@
 /**
-* _sqrt - function that find the natural square root of a number
+11;rgb:0000/0000/0000* _sqrt - function that find the natural square root of a number
 * @n: number to get its square root
 * @sqrt: sqrt to test it
 *
@@ -24,8 +24,8 @@ return (_sqrt(n, sqr + 1));
 */
 int _sqrt_recursion(int n)
 {
-	if (n < 0)
-		return (-1);
+if (n < 0)
+return (-1);
 
-	return (_sqrt(n, 0));
+return (_sqrt(n, 0));
 }
