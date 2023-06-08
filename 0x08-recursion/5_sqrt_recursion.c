@@ -1,19 +1,19 @@
 /**
-11;rgb:0000/0000/0000* _sqrt - function that find the natural square root of a number
+* _sqrt - function that find the natural square root of a number
 * @n: number to get its square root
-* @sqrt: sqrt to test it
+* @sqr: sqrt to test it
 *
 * Return: squre root of number n if it has natural squre root. -1 otherwise
 */
-int _sqr(int n, int sqr)
+int _sqrt(int n, int sqr)
 {
-if (sqr > n)
-return (-1);
+	if (sqr > n)
+		return (-1);
 
-if (sqr * sqr == n)
-return (sqr);
+	if (sqr * sqr == n)
+		return (sqr);
 
-return (_sqrt(n, sqr + 1));
+	return (_sqrt(n, sqr + 1));
 }
 
 /**
@@ -24,8 +24,8 @@ return (_sqrt(n, sqr + 1));
 */
 int _sqrt_recursion(int n)
 {
-if (n < 0)
-return (-1);
+	if (n < 0)
+		return (-1);
 
-return (_sqrt(n, 0));
+	return (_sqrt(n, 0));
 }
