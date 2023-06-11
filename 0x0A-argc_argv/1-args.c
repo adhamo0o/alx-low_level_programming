@@ -5,10 +5,14 @@
  *@argv: arguments vector
  *Return: 0
  */
-int main(int argc,__attribute__((unused)) char **argv)
+int main(int argc, __attribute__((unused)) char *argv[])
 {
-int x;
-for (x = 0; x < argc; x++)
+if (argc == 0)
+printf("1\n");
+else
 printf("%d\n", argc);
+
+
 return (0);
+
 }
