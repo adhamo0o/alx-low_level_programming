@@ -15,12 +15,10 @@ char *ptr;
 if (str == NULL)
 return (NULL);
 ptr = (char *)malloc(sizeof(char));
-for (x = 0; x < strlen(str + 1); x++)
-ptr[x] = str[x];
-
 if (str == NULL)
 return (NULL);
-else
+for (x = 0; x < strlen(str + 1); x++)
+ptr[x] = str[x];
 return (ptr);
 
 free(ptr);
