@@ -2,9 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 /**
-*_stdrup - function that returns a pointer to a newly allocated space
-*@str: pointer ro char
-*Return: NULL if str = NULL
+ *_strdup - returns a pointer to a newly allocated space.
+ *@str: pointer ro char
+ *Return: NULL if str = NULL
 */
 char *_strdup(char *str)
 {
