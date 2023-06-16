@@ -23,6 +23,5 @@ return (NULL);
 else
 return (ptr);
 
-free(str);
-return (0);
+free(ptr);
 }
