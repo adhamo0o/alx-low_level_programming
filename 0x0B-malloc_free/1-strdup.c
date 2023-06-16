@@ -19,10 +19,9 @@ ptr = malloc(sizeof(char) * (strlen(str) + 1));
 if (ptr == NULL)
 return (NULL);
 
-for (x = 0; x < strlen(str + 1); x++)
+for (x = 0; x < strlen(str); x++)
 ptr[x] = str[x];
 
-putchar('\0');
 return (ptr);
 
 free(ptr);
