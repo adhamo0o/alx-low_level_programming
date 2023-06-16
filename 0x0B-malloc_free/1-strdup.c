@@ -15,7 +15,7 @@ char *ptr;
 if (str == NULL)
 return (NULL);
 ptr = (char *)malloc(sizeof(char));
-if (str == NULL)
+if (ptr == NULL)
 return (NULL);
 for (x = 0; x < strlen(str + 1); x++)
 ptr[x] = str[x];
