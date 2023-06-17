@@ -22,14 +22,14 @@ len2 = strlen(s2);
 
 con = malloc(sizeof(char) * (len1 + len2 + 1));
 
+if (con == NULL)
+return (NULL);
+
 for (x = 0; x < len1; x++)
 con[x] = s1[x];
 
 for (y = 0; y < len2; y++)
 con[x + y] = s2[y];
-
-if (con == NULL)
-return (NULL);
 
 return (con);
 free(con);
