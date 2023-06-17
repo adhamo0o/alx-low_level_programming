@@ -31,5 +31,6 @@ con[x + y] = s2[y];
 if (con == NULL)
 return (NULL);
 
+free (con);
 return (con);
 }
