@@ -10,23 +10,26 @@
 char *str_concat(char *s1, char *s2)
 {
 
-unsigned int x, y, z;
-char *ptr1;
-char *ptr2;
+unsigned int len1, len2, x, y;
 char *con;
 
-ptr1 = malloc(sizeof(char) * strlen(s1 + 1));
-ptr2 = malloc(sizeof(char) * strlen(s2 + 1));
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+len1 = strlen(s1);
+len2 = strlen(s2);
 
-for (x = 0; x < strlen(s1); x++)
-ptr1[x] = s1[x];
+con = malloc(sizeof(char) * (len1 + len2 + 1));
 
-for (y = 0; y < strlen(s2); y++)
-ptr2[y] = s2[y];
+for (x = 0; x < len1; x++)
+con[x] = s1[x];
 
-con[z] = ptr1[x] + ptr2[y];
+for (y = 0; y < len2; y++)
+con[x] = s2[y];
+
 if (con == NULL)
 return (NULL);
 
-return (con[z]);
+return (con);
 }
