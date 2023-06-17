@@ -31,6 +31,6 @@ free(ptr[h]);
 for (w = 0; w < width; w++)
 ptr[h][w] = 0;
 
-return (ptr);
+return (*ptr);
 free(ptr);
 }
