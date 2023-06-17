@@ -29,7 +29,7 @@ for (w = 0; w < h; w++)
 free(ptr[w]);
 
 }
-free(ptr);
+free(ptr[h]);
 
 return (NULL);
 }
@@ -40,4 +40,6 @@ ptr[h][w] = 0;
 }
 
 return (ptr);
+
+free(ptr);
 }
