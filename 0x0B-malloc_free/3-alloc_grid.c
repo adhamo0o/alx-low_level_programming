@@ -24,13 +24,18 @@ for (h = 0; h < height; h++)
 {
 ptr[h] = (int *)malloc(width * sizeof(int));
 if (ptr[h] == NULL)
+{
+for (w = 0; w < h; w++)
+free(ptr[w]);
+
 return (NULL);
+}
 free(ptr[h]);
 }
 
 for (w = 0; w < width; w++)
 ptr[h][w] = 0;
 
-return (*ptr);
+return (ptr);
 free(ptr);
 }
