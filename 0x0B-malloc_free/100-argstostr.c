@@ -16,7 +16,7 @@ int x;
 if (ac == 0 || av == NULL)
 return (NULL);
 
-ptr = malloc(sizeof(char) * ac);
+ptr = malloc(sizeof(char) * (ac + 1));
 if (ptr == NULL)
 return (NULL);
 
@@ -25,7 +25,7 @@ for (x = 0; x < ac; x++)
 ptr[x] = *((char *)av[x]);
 putchar('\n');
 }
-
+ptr[x] = '\0';
 return (ptr);
 
 free(ptr);
