@@ -16,7 +16,7 @@ int x;
 if (ac == 0 || av == NULL)
 return (NULL);
 
-ptr = malloc(sizeof(char) * ac + 1);
+ptr = malloc(sizeof(char) * (ac + 1) * 2);
 if (ptr == NULL)
 return (NULL);
 
