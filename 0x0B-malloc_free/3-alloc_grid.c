@@ -28,10 +28,10 @@ if (ptr[h] == NULL)
 for (w = h - 1; w >= 0; w--)
 free(ptr[w]);
 
-}
 free(ptr);
 
 return (NULL);
+}
 }
 for (h = 0; h < height; h++)
 {
