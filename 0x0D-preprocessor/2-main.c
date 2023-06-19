@@ -1,9 +1,9 @@
 #include <stdio.h>
 /**
  *print - function print the name of file
- *
+ *rfeturn: 0
  */
-void print()
+int print(void)
 {
-printf (__FILE_);
+printf("%s", __FILE_);
 }
