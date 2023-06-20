@@ -24,7 +24,7 @@ return (NULL);
 }
 
 new_dog->name = malloc(sizeof(char) * (len1 + 1));
-new_dog->owner = malloc(sizeof(char) *(len2 + 1));
+new_dog->owner = malloc(sizeof(char) * (len2 + 1));
 if (new_dog->name == NULL || new_dog->owner == NULL)
 {
 free(new_dog->name);
@@ -33,7 +33,7 @@ free(new_dog);
 return (NULL);
 }
 
- 
+
 new_dog->name = strdup(name);
 new_dog->age = age;
 new_dog->owner = strdup(owner);
