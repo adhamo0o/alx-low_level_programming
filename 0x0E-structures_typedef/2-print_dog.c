@@ -14,7 +14,7 @@ return;
 else
 {
 if (d->age == 0.0 || d->owner == NULL)
-printf("nill\n");
+printf("(nill)\n");
 else if (d->name == NULL)
 printf("Name: (nil)\n");
 else
