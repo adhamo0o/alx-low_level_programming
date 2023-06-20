@@ -23,5 +23,4 @@ new_dog->name = strdup(name);
 new_dog->age = age;
 new_dog->owner = strdup(owner);
 return (new_dog);
-free(new_dog);
 }
