@@ -16,7 +16,7 @@ dog_t *new_dog = malloc(sizeof(dog_t));
 if (new_dog == NULL)
 {
 return (NULL);
-free(new_dog);
+free(dog_t);
 }
 
 new_dog->name = strdup(name);
