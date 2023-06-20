@@ -20,7 +20,7 @@ printf("%s\n", d->name);
 printf("%.1f\n", d->age);
 
 if (d->owner == NULL)
-printf("(nill)\n");
+printf("Owner: (nill)\n");
 else
 printf("%s\n", d->owner);
 
