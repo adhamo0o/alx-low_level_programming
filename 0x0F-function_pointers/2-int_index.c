@@ -20,5 +20,5 @@ cmp(x);
 else
 return (-);
 }
-return(x);
+return (x);
 }
