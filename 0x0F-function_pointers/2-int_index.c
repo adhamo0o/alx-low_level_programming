@@ -15,10 +15,10 @@ return (-1);
 
 for (x = 0; x <= size; x++)
 {
-if (x == array[size])
-cmp(x);
+if (cmp(array[x] != 0)
+return (x);
 else
 return (-1);
 }
-return (x);
+
 }
