@@ -16,4 +16,5 @@ for (x = 0; x < size; x++)
 if (action != 0)
 action(*array);
 }
+return;
 }
