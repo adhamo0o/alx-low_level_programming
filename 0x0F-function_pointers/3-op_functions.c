@@ -1,5 +1,5 @@
 /**
- *op_add : add two integers
+ *op_add - add two integers
  *@a: first num
  *@b: second num
  *Return: add of two integers
@@ -8,7 +8,7 @@ int op_add(int a, int b)
 return (a + b);
 
 /**
-*op_sub : sub two integers
+*op_sub - sub two integers
 *@a: first num
 *@b: second num
 *Return: sub of two integers

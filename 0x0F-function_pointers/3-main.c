@@ -22,7 +22,7 @@ if (fun == NULL)
 printf("Error\n");
 exit(99);
 }
- 
+
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 
