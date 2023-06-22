@@ -13,8 +13,10 @@ int result, num1, num2;
 int (*fun)(int, int);
 
 if (argc != 4)
+{
 printf("Error\n");
 exit(98);
+}
 
 fun = get_op_func(argv[2]);
 if (fun == NULL)
