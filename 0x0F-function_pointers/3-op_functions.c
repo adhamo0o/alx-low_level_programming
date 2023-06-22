@@ -1,3 +1,6 @@
+#include "function_pointers.h"
+#include <stdio.h>
+#include <stdlib.h>
 /**
  *op_add - add two integers
  *@a: first num
@@ -5,8 +8,9 @@
  *Return: add of two integers
  */
 int op_add(int a, int b)
+{
 return (a + b);
-
+}
 /**
 *op_sub - sub two integers
 *@a: first num
@@ -14,8 +18,9 @@ return (a + b);
 *Return: sub of two integers
 */
 int op_sub(int a, int b)
+{
 return (a - b);
-
+}
 /**
  *op_mul - mul two integers
  *@a: first int

@@ -26,7 +26,7 @@ exit(99);
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 
-result = fun(num1, num2)
+result = fun(num1, num2);
 printf("%d\n", result);
 
 return (0);

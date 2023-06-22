@@ -1,4 +1,6 @@
-#include "finction_pointers.h"
+#include "3-calc.h"
+#include <string.h>
+#include <stdlib.h>
 /**
  *get_op_func - pointer to fun
  *@s: pointer to char
@@ -16,12 +18,13 @@ op_t ops[] = {
 {"%", op_mod},
 {NULL, NULL}
 };
-int i;
+int i = 0;
 
 while (ops[i].op != NULL)
 {
 if (*(ops[i].op) == *s)
 return (ops[i].f);
+i++;
 }
 return (NULL);
 }
