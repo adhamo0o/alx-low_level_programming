@@ -28,6 +28,15 @@ exit(99);
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 
+if (argv[2][0] == '/')
+{
+if (num2 == 0)
+{
+printf("Error\n");
+exit(100);
+}
+}
+
 result = fun(num1, num2);
 printf("%d\n", result);
 
