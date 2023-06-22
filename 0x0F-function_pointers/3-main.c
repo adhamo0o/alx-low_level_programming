@@ -9,7 +9,7 @@
  */
 int main(int argc, char *argv[])
 {
-int result, num1, num2;
+int result;
 int (*fun)(int, int);
 
 if (argc != 4)
@@ -19,11 +19,15 @@ exit(98);
 }
 
 
-num1 = atoi(argv[1]);
-num2 = atoi(argv[3]);
-
 fun = get_op_func(argv[2]);
-result = fun(num1, num2);
+
+if (fun == NULL)
+{
+printf("Error\n");
+exit(99);
+}
+
+result = fun(atoi(argv[1]), atoi(argv[3]));
 printf("%d\n", result);
 
 return (0);
