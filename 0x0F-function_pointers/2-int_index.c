@@ -18,7 +18,7 @@ for (x = 0; x <= size; x++)
 if (x == array[size])
 cmp(x);
 else
-return (-);
+return (-1);
 }
 return (x);
 }
