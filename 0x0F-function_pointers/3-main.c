@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 int result, num1, num2;
 int (*fun)(int, int);
 
-if (argc != 4)
+while (argc != 4)
 {
 printf("Error\n");
 exit(98);
