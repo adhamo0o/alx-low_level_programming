@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
 int result, num1, num2;
 int (*fun)(int, int);
 
-while (argc != 4)
+if (argc != 4)
 {
 printf("Error\n");
 exit(98);
@@ -28,13 +28,10 @@ exit(99);
 num1 = atoi(argv[1]);
 num2 = atoi(argv[3]);
 
-if (argv[2][0] == '/')
-{
-if (num2 == 0)
+if ((argv[2][0] == '/' || argv[2][0] == '%') && num2 == 0)
 {
 printf("Error\n");
 exit(100);
-}
 }
 
 result = fun(num1, num2);
