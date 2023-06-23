@@ -10,7 +10,7 @@
 void print_all(const char * const format, ...)
 {
 int x = 0, i;
-char c;
+char c, separator;
 float f;
 char *s;
 va_list ptr;
@@ -34,12 +34,15 @@ break;
 case  's':
 s = va_arg(ptr, char *);
 if (s == NULL)
+{
 printf("(nil)");
+break;
+}
 printf("%s", s);
 break;
-default:
-continue;
 }
+separator = va_arg(ptr, int);
+printf("%d", separator);
 x++;
 }
 putchar('\n');
