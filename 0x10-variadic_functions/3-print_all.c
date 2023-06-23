@@ -10,6 +10,7 @@
 void print_all(const char * const format, ...)
 {
 int x = 0, y;
+char *s;
 va_list ptr;
 va_start(ptr, format);
 while (format[x] && format)
@@ -30,16 +31,14 @@ printf("%f", va_arg(ptr, double));
 y = 1;
 break;
 case  's':
-{
-char *s = va_arg(ptr, char *);
+s = va_arg(ptr, char *);
 y = 1;
-if (s == NULL)
+if (!s)
 {
-printf("%s", "(nil)");
+printf("(nil)");
 break;
 }
 printf("%s", s);
-}
 }
 if (format[x + 1] && y)
 printf(", ");
