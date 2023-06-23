@@ -17,14 +17,10 @@ va_start(ptr, n);
 
 for (i = 0; i < n; i++)
 {
-while (n - 1)
-printf("%d", va_arg(ptr, int));
-if (separator == NULL)
+if (separator == NULL || i < n -1)
 printf("%d", va_arg(ptr, int));
 else
-printf("%d", va_arg(ptr, int));
-printf("%s", separator);
-
+printf("%d%s", va_arg(ptr, int), separator);
 }
 
 putchar('\n');
