@@ -28,10 +28,9 @@ printf("(nil)");
 else
 printf("%s%s", s, separator);
 }
-
+putchar('\n');
 }
 
-putchar('\n');
 
 va_end(ptr);
 
