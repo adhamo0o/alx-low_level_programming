@@ -3,14 +3,14 @@
 #include <stdio.h>
 /**
  *print_all - function that prints anything.
- *@format: list of types of arguments
+11;rgb:0000/0000/0000*@format: list of types of arguments
  *
  *Return: 0
  */
 void print_all(const char * const format, ...)
 {
 int x = 0, i;
-char c, separator;
+char c;
 float f;
 char *s;
 va_list ptr;
@@ -41,8 +41,7 @@ break;
 printf("%s", s);
 break;
 }
-separator = va_arg(ptr, int);
-printf("%d", separator);
+printf(", ");
 x++;
 }
 putchar('\n');
