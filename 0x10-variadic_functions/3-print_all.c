@@ -40,7 +40,7 @@ break;
 default:
 continue;
 }
-i++;
+x++;
 }
 putchar('\n');
 va_end(ptr);
