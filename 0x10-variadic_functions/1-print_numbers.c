@@ -17,7 +17,7 @@ va_start(ptr, n);
 
 for (i = 0; i < n; i++)
 {
-if (separator == NULL)
+if (separator == NULL || while (n - 1))
 printf("%d", va_arg(ptr, int));
 else
 printf("%d", va_arg(ptr, int));
