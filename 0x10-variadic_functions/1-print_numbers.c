@@ -15,12 +15,15 @@ va_list ptr;
 
 va_start(ptr, n);
 
-for (i = 0; i < n; i++)
+while (i = 0; i < n)
 {
 if (separator == NULL)
 printf("%d\n", va_arg(ptr, int));
 else
-printf("%s%d\n", separator, va_arg(ptr, int));
+printf("%d\n", va_arg(ptr, int));
+printf("%s", separator);
+
+i++;
 }
 
 putchar('\n');
