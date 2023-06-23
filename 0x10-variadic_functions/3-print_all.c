@@ -9,38 +9,37 @@
  */
 void print_all(const char * const format, ...)
 {
-int x = 0, i;
-char c;
-float f;
+int x = 0, y;
 char *s;
 va_list ptr;
 va_start(ptr, format);
 while (format[x] && format)
 {
+i = 0;
 switch (format[x])
 {
 case 'c':
-c = va_arg(ptr, int);
-printf("%c", c);
+printf("%c", va_arg(ptr, int));
+y = 1;
 break;
 case 'i':
-i = va_arg(ptr, int);
-printf("%d", i);
+printf("%d", va_arg(ptr, int));
+y = 1;
 break;
 case 'f':
-f = va_arg(ptr, double);
-printf("%f", f);
+printf("%f", va_arg(ptr, double));
+y = 1;
 break;
 case  's':
-s = va_arg(ptr, char *);
 if (s == NULL)
 {
 printf("(nil)");
 break;
 }
-printf("%s", s);
+printf("%s", va_arg(ptr, char *));
 break;
 }
+if (format[x + 1] && y)
 printf(", ");
 x++;
 }
