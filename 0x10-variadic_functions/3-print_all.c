@@ -38,7 +38,7 @@ if (s == NULL)
 printf("(nil)");
 break;
 default:
-break;
+continue;
 }
 i++;
 }
