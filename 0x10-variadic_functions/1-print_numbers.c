@@ -15,7 +15,7 @@ va_list ptr;
 
 va_start(ptr, n);
 
-while (i = 0; i < n)
+for (i = 0; i < n; i++)
 {
 if (separator == NULL)
 printf("%d\n", va_arg(ptr, int));
@@ -23,7 +23,6 @@ else
 printf("%d\n", va_arg(ptr, int));
 printf("%s", separator);
 
-i++;
 }
 
 putchar('\n');
