@@ -18,9 +18,11 @@ list_t *add_node_end(__attribute__((unused)) list_t **head, const char *str)
 	new_node->next = NULL;
 
 	if (*head == NULL)
-		return(NULL);
-
-	while (tail->next != NULL)
+	{	
+		*head = new_node;
+		return (*head);
+	}
+		while (tail->next != NULL)
 		tail = tail->next;
 
 	tail->next = new_node;
