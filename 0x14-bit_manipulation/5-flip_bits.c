@@ -1,5 +1,5 @@
 #include <stdio.h> 
- #include "main.h" 
+#include "main.h" 
   
  /** 
  * flip_bits -  function returns number of bits that id diff between 2 numbers 
@@ -21,3 +21,4 @@
          } 
   
          return (count); 
+}
